@@ -15,7 +15,7 @@ ig.use({
 });
 
 //the redirect uri we set when registering our application
-var redirectUri = 'http://localhost:3000/handleAuth';
+var redirectUri = process.env.PORT || 3000;
 
 app.get('/authorize', function(req, res){
     // set the scope of our application to be able to access likes and public content
