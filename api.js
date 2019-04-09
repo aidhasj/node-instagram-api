@@ -46,4 +46,6 @@ app.get('/', function(req, res){
      });
  });
  
- app.listen(3000);
+ app.listen(redirectUri, function( ) {
+     console.log('Port is up');
+ });
